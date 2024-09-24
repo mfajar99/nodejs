@@ -1,0 +1,32 @@
+{
+  "name": "belajar-nodejs-npm",
+  "version": "1.0.0",
+  "description": "Belajar NodeJS NPM",
+  "exports": {
+    ".": "./index.js",
+    "./write": "./write.js"
+  },
+  "scripts": {
+    "run": "node index.js",
+    "prestart": "echo 'Before Application Start'",
+    "start": "node index.js",
+    "poststart": "echo 'After Application Start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "programmerzmannow",
+    "pzn",
+    "nodejs",
+    "npm"
+  ],
+  "author": "Fajar Muhammad",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "lodash": "3.9.x",
+    "nodejs-npm-library-pzn": "^1.0.0"
+  },
+  "devDependencies": {
+    "moment": "^2.29.3"
+  }
+}

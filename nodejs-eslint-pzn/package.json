@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-eslint-pzn",
+  "version": "1.0.0",
+  "description": "Belajar nodejs eslint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fajar",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^9.10.0"
+  }
+}

@@ -1,0 +1,145 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+   "username": "amir",
+   "password": "rahasia",
+   "name" : "Fajar Muhammad"
+}
+
+### 63f587a4-6b66-4d16-81f8-84b7db58f8d0
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+   "username": "amir",
+   "password": "rahasia"
+}
+
+###
+
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+###
+
+PATCH http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+{
+   "name" : "Fajar Muhammad Amir"
+}
+
+###
+
+DELETE http://localhost:3000/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+###
+
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+{
+   "first_name" : "Andi",
+   "last_name" : "Saja",
+   "email" : "andi@gmail.com",
+   "phone" : "78748278278"
+}
+
+###
+
+GET http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+###
+
+GET http://localhost:3000/api/contacts/2100
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+### 
+
+PUT http://localhost:3000/api/contacts/2097
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+{
+   "first_name": "Budi",
+   "last_name": "Dia",
+   "email": "budi@gmail.com",
+   "phone": "084788348378"
+}
+
+###
+
+DELETE http://localhost:3000/api/contacts/2098
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+###
+
+POST http://localhost:3000/api/contacts/2100/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+{
+   "street": "Kota",
+   "city": "Jakarta",
+   "province": "DKI Jakarta",
+   "country": "Indonesia",
+   "postal_code": "43434"
+}
+
+###
+
+GET http://localhost:3000/api/contacts/2100/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+###
+
+GET http://localhost:3000/api/contacts/2100/addresses/104
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+###
+
+PUT http://localhost:3000/api/contacts/2100/addresses/104
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a
+
+{
+   "street": "Kantor Kerja",
+   "city": "Surabaya",
+   "province": "Jawa Timur",
+   "country": "Indonesia",
+   "postal_code": "232323"
+}
+
+###
+
+DELETE http://localhost:3000/api/contacts/2100/addresses/104
+Content-Type: application/json
+Accept: application/json
+Authorization: 2fb7daf7-a6e3-4a59-bbfe-aca25d1f0e9a

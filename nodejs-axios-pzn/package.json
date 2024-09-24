@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-axios-pzn",
+  "version": "1.0.0",
+  "description": "Belajar NodeJS Axios",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "author": "Fajar",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
